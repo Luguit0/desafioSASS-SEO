@@ -1,0 +1,59 @@
+@use 'mixinsf';
+
+@mixin arreglar-img {
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+
+    ;
+
+}
+
+.plantilla {
+
+    &__container {
+        height: calc(100vh - 70px);
+        background-image: linear-gradient(#0000006d, #00000075), url(../multimedia/imagenes/muchasmonedas1.jpg);
+
+        @include arreglar-img;
+
+
+        @include mixinsf.m-platilla(center);
+    }
+
+    &__container1 {
+        height: calc(100vh - 70px);
+        background-image: linear-gradient(#0000006d, #00000075), url(../multimedia/imagenes/muchasmonedas2.jpg);
+
+        @include arreglar-img;
+
+
+        @include mixinsf.m-platilla(center);
+    }
+
+    &__container2 {
+        height: calc(100vh - 70px);
+        background-image: linear-gradient(#0000006d, #00000075), url(../multimedia/imagenes/muchasmonedas3.jpg);
+
+        @include arreglar-img;
+
+
+        @include mixinsf.m-platilla(center);
+    }
+
+    &__text {
+        color: white;
+    }
+
+    &__title {
+        font-size: mixinsf.pixeles-rem(40);
+        margin-bottom: mixinsf.pixeles-rem(10);
+    }
+
+    &__paragraph {
+        font-size: mixinsf.pixeles-rem(19);
+    }
+
+}

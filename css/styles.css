@@ -1,0 +1,348 @@
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.circle-1 {
+  animation-name: animacion1;
+}
+@keyframes animacion1 {
+  100% {
+    transform: translate(50%);
+  }
+}
+
+.circle-2 {
+  animation-name: animacion2;
+}
+@keyframes animacion2 {
+  100% {
+    transform: translate(100%);
+  }
+}
+
+.circle-3 {
+  animation-name: animacion3;
+}
+@keyframes animacion3 {
+  100% {
+    transform: translate(150%);
+  }
+}
+
+.circle-4 {
+  animation-name: animacion4;
+}
+@keyframes animacion4 {
+  100% {
+    transform: translate(200%);
+  }
+}
+
+.circle-5 {
+  animation-name: animacion5;
+  animation-direction: alternate-reverse;
+}
+@keyframes animacion5 {
+  100% {
+    transform: translate(250%);
+  }
+}
+
+.circle-6 {
+  animation-name: animacion6;
+}
+@keyframes animacion6 {
+  100% {
+    transform: translate(300%);
+  }
+}
+
+.circle-7 {
+  animation-name: animacion7;
+}
+@keyframes animacion7 {
+  100% {
+    transform: translate(350%);
+  }
+}
+
+.circle-8 {
+  animation-name: animacion8;
+}
+@keyframes animacion8 {
+  100% {
+    transform: translate(400%);
+  }
+}
+
+.circle-9 {
+  animation-name: animacion9;
+}
+@keyframes animacion9 {
+  100% {
+    transform: translate(450%);
+  }
+}
+
+.circle-10 {
+  animation-name: animacion10;
+}
+@keyframes animacion10 {
+  100% {
+    transform: translate(500%);
+  }
+}
+
+.plantilla__container {
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4274509804), rgba(0, 0, 0, 0.4588235294)), url(../multimedia/imagenes/muchasmonedas1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plantilla__container1 {
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4274509804), rgba(0, 0, 0, 0.4588235294)), url(../multimedia/imagenes/muchasmonedas2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plantilla__container2 {
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4274509804), rgba(0, 0, 0, 0.4588235294)), url(../multimedia/imagenes/muchasmonedas3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plantilla__text {
+  color: white;
+}
+.plantilla__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.625rem;
+}
+.plantilla__paragraph {
+  font-size: 1.1875rem;
+}
+
+body {
+  background-color: rgb(226, 224, 224);
+}
+
+main {
+  border: 1px solid black;
+  padding: 16px;
+  margin: 32px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
+  margin: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 1175px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    justify-content: center;
+  }
+}
+@media (max-width: 750px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-content: center;
+  }
+}
+.footer-main {
+  padding-top: 90px;
+}
+
+.address-main > div.col-lg-4 {
+  border-bottom: dotted 1px #999;
+}
+
+.address-box {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.add-icon {
+  width: 60px;
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.address-box .add-icon {
+  background: #27303b;
+  height: 75px;
+  line-height: 75px;
+  width: 75px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.add-icon img {
+  width: 100%;
+}
+
+.address-box .add-icon img {
+  max-width: 40px;
+}
+
+.add-content {
+  padding-left: 70px;
+}
+
+.add-content h5 {
+  font-size: 17px;
+  color: #ffffff;
+  padding: 0;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.add-content p {
+  font-size: 13px;
+  color: #999999;
+  font-weight: 300;
+}
+.add-content a {
+  font-size: 14px;
+  color: #999999;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+.add-content p a:hover {
+  color: #0b1fd3;
+}
+
+/* 
+.carta {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: #242329;
+    text-align: center;
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+
+.carta-datos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-250px);
+    transition: transform .5s;
+}
+
+.carta-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s .35s;
+}
+
+.carta-titulo {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px;
+    background-color: #242329;
+    margin-top: 25px;
+}
+
+.carta-info {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.carta-click {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #242329;
+    background-color: #fff;
+    transition: background-color .25s;
+}
+
+.carta-click:hover {
+    background-color: #242329;
+    color: #fff;
+}
+
+.carta:hover {
+    background-color: #242329;
+    color: #fff;
+}
+
+.carta:hover .carta-datos {
+    transform: translateY(0px);
+}
+
+.carta:hover .carta-img {
+    transform: translateX(250px);
+    transition-delay: 0s;
+}
+
+
+
+.formulario {
+    width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid black;
+}
+
+.formulario h4 {
+    text-align: start;
+    color: black;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.casillero {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid aqua;
+    font-size: 18px;
+
+}
+
+.boton {
+    width: 100%;
+    padding: 12px;
+    margin: 16px 0px;
+}
+} */
+
+/*# sourceMappingURL=styles.css.map */
